@@ -872,11 +872,15 @@ img {
   border-color: var(--color-gold);
 }
 
+.video__player,
 .video__iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
+  height: auto;
   display: block;
   border: none;
+  border-radius: var(--radius);
+  background-color: #000;
 }
 
 /* ==============================================================
