@@ -16,6 +16,9 @@
 
   <!-- CSS chính -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Ưu tiên tải ảnh banner (LCP) – không lazy-load -->
+  <link rel="preload" as="image" href="assets/images/hero-chua-mot-cot.webp" type="image/webp" fetchpriority="high">
 </head>
 
 <body>
@@ -105,8 +108,11 @@
 
         <!-- Ảnh lịch sử Chùa Một Cột -->
         <div class="gioi-thieu__image-wrap">
-          <img src="assets/images/Anh_lich_su_chua_mot_cot.jpg" alt="Ảnh lịch sử Chùa Một Cột – Hà Nội"
-            class="gioi-thieu__img">
+          <picture>
+            <source srcset="assets/images/Anh_lich_su_chua_mot_cot.webp" type="image/webp">
+            <img src="assets/images/Anh_lich_su_chua_mot_cot.jpg" alt="Ảnh lịch sử Chùa Một Cột – Hà Nội"
+              class="gioi-thieu__img" width="1920" height="1394" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </div>
@@ -173,8 +179,14 @@
       <!-- Ảnh kiến trúc chi tiết -->
       <div class="kien-truc__diagram animate-on-scroll">
         <figure class="kien-truc__figure">
-          <img src="assets/images/Anh_kien_truc_chua_mot_cot.jpg" alt="Kiến trúc Chùa Một Cột – Hà Nội" </div>
+          <picture>
+            <source srcset="assets/images/Anh_kien_truc_chua_mot_cot.webp" type="image/webp">
+            <img src="assets/images/Anh_kien_truc_chua_mot_cot.jpg" alt="Kiến trúc Chùa Một Cột – Hà Nội"
+              class="kien-truc__img" width="1235" height="768" loading="lazy" decoding="async">
+          </picture>
+        </figure>
       </div>
+    </div>
   </section>
 
   <!-- ============================================================
@@ -197,7 +209,13 @@
       <div class="gallery__grid">
         <!-- Ảnh 1 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_1.jpg" alt="Chùa Một Cột nhìn từ phía trước" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_1.webp" type="image/webp">
+            <img data-src="assets/images/Anh_1.jpg"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='853'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Chùa Một Cột nhìn từ phía trước" class="gallery__img" width="1280" height="853" loading="lazy"
+              decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -205,7 +223,13 @@
 
         <!-- Ảnh 2 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_2.JPG" alt="Góc nhìn từ bên hồ Linh Chiểu" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_2.webp" type="image/webp">
+            <img data-src="assets/images/Anh_2.JPG"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='960'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Góc nhìn từ bên hồ Linh Chiểu" class="gallery__img" width="1280" height="960" loading="lazy"
+              decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -213,7 +237,12 @@
 
         <!-- Ảnh 3 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_3.jpg" alt="Chi tiết mái chùa" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_3.webp" type="image/webp">
+            <img data-src="assets/images/Anh_3.jpg"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='851'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Chi tiết mái chùa" class="gallery__img" width="1280" height="851" loading="lazy" decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -221,7 +250,12 @@
 
         <!-- Ảnh 4 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_4.jpg" alt="Hoa sen trong hồ" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_4.webp" type="image/webp">
+            <img data-src="assets/images/Anh_4.jpg"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='960'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Hoa sen trong hồ" class="gallery__img" width="1280" height="960" loading="lazy" decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -229,7 +263,13 @@
 
         <!-- Ảnh 5 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_5.jpg" alt="Chùa Một Cột vào buổi chiều" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_5.webp" type="image/webp">
+            <img data-src="assets/images/Anh_5.jpg"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='853'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Chùa Một Cột vào buổi chiều" class="gallery__img" width="1280" height="853" loading="lazy"
+              decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -237,7 +277,12 @@
 
         <!-- Ảnh 6 -->
         <div class="gallery__item animate-on-scroll">
-          <img src="assets/images/Anh_6.jpg" alt="Toàn cảnh khu di tích" class="gallery__img" loading="lazy">
+          <picture>
+            <source data-srcset="assets/images/Anh_6.webp" type="image/webp">
+            <img data-src="assets/images/Anh_6.jpg"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='853'%3E%3Crect fill='%23F5EDDA' width='100%25' height='100%25'/%3E%3C/svg%3E"
+              alt="Toàn cảnh khu di tích" class="gallery__img" width="1280" height="853" loading="lazy" decoding="async">
+          </picture>
           <div class="gallery__overlay">
             <span class="gallery__overlay-icon">🔍</span>
           </div>
@@ -273,8 +318,11 @@
         <!-- Điểm check-in 1 -->
         <div class="checkin__item animate-on-scroll">
           <div class="checkin__image">
-            <img src="assets/images/Duy.jpg" alt="Check-in phía trước hồ Linh Chiểu" class="checkin__img"
-              loading="lazy">
+            <picture>
+              <source srcset="assets/images/Duy.webp" type="image/webp">
+              <img src="assets/images/Duy.jpg" alt="Check-in phía trước hồ Linh Chiểu" class="checkin__img"
+                width="1920" height="2560" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="checkin__info">
             <h3>🌅 Phía trước hồ Linh Chiểu</h3>
@@ -289,7 +337,11 @@
         <!-- Điểm check-in 2 -->
         <div class="checkin__item animate-on-scroll">
           <div class="checkin__image">
-            <img src="assets/images/Hieu.jpg" alt="Check-in góc hoa sen" class="checkin__img" loading="lazy">
+            <picture>
+              <source srcset="assets/images/Hieu.webp" type="image/webp">
+              <img src="assets/images/Hieu.jpg" alt="Check-in góc hoa sen" class="checkin__img" width="1284"
+                height="1696" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="checkin__info">
             <h3>🪷 Góc hoa sen</h3>
@@ -304,7 +356,11 @@
         <!-- Điểm check-in 3 -->
         <div class="checkin__item animate-on-scroll">
           <div class="checkin__image">
-            <img src="assets/images/Thuy.jpg" alt="Check-in khuôn viên vườn cây" class="checkin__img" loading="lazy">
+            <picture>
+              <source srcset="assets/images/Thuy.webp" type="image/webp">
+              <img src="assets/images/Thuy.jpg" alt="Check-in khuôn viên vườn cây" class="checkin__img" width="960"
+                height="1280" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="checkin__info">
             <h3>🌳 Khuôn viên vườn cây</h3>
@@ -319,7 +375,11 @@
         <!-- Điểm check-in 4 -->
         <div class="checkin__item animate-on-scroll">
           <div class="checkin__image">
-            <img src="assets/images/Linh.jpg" alt="Check-in bậc thang lên chùa" class="checkin__img" loading="lazy">
+            <picture>
+              <source srcset="assets/images/Linh.webp" type="image/webp">
+              <img src="assets/images/Linh.jpg" alt="Check-in bậc thang lên chùa" class="checkin__img" width="639"
+                height="649" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="checkin__info">
             <h3>🏛️ Bậc thang lên chùa</h3>
@@ -356,8 +416,12 @@
         <!-- Quán 1: Phở cuốn Hưng Bền -->
         <div class="food__card animate-on-scroll">
           <div class="food__image">
-            <img src="assets/images/Am_thuc_1.jpg" alt="Phở cuốn Hưng Bền" class="food__img" loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <picture>
+              <source srcset="assets/images/Am_thuc_1.webp" type="image/webp">
+              <img src="assets/images/Am_thuc_1.jpg" alt="Phở cuốn Hưng Bền" class="food__img" width="960" height="540"
+                loading="lazy" decoding="async"
+                onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+            </picture>
             <div class="food__image-fallback">
               <span class="food__fallback-icon">🍲</span>
               <p>Phở cuốn Hưng Bền</p>
@@ -388,8 +452,12 @@
         <!-- Quán 2: Tuyết Bún Chả 34 -->
         <div class="food__card animate-on-scroll">
           <div class="food__image">
-            <img src="assets/images/Am_thuc_2.jpg" alt="Tuyết Bún Chả 34" class="food__img" loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <picture>
+              <source srcset="assets/images/Am_thuc_2.webp" type="image/webp">
+              <img src="assets/images/Am_thuc_2.jpg" alt="Tuyết Bún Chả 34" class="food__img" width="1366" height="911"
+                loading="lazy" decoding="async"
+                onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+            </picture>
             <div class="food__image-fallback">
               <span class="food__fallback-icon">🍜</span>
               <p>Tuyết Bún Chả 34</p>
@@ -420,8 +488,12 @@
         <!-- Quán 3: Gà tần - Bánh cuốn nóng -->
         <div class="food__card animate-on-scroll">
           <div class="food__image">
-            <img src="assets/images/Am_thuc_3.jpg" alt="Gà tần - Bánh cuốn nóng" class="food__img" loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <picture>
+              <source srcset="assets/images/Am_thuc_3.webp" type="image/webp">
+              <img src="assets/images/Am_thuc_3.jpg" alt="Gà tần - Bánh cuốn nóng" class="food__img" width="960"
+                height="960" loading="lazy" decoding="async"
+                onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+            </picture>
             <div class="food__image-fallback">
               <span class="food__fallback-icon">🍲</span>
               <p>Gà tần - Bánh cuốn nóng</p>
@@ -452,8 +524,12 @@
         <!-- Quán 4: KOTO Văn Miếu -->
         <div class="food__card animate-on-scroll">
           <div class="food__image">
-            <img src="assets/images/Am_thuc_4.jpg" alt="KOTO Văn Miếu" class="food__img" loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <picture>
+              <source srcset="assets/images/Am_thuc_4.webp" type="image/webp">
+              <img src="assets/images/Am_thuc_4.jpg" alt="KOTO Văn Miếu" class="food__img" width="1290" height="860"
+                loading="lazy" decoding="async"
+                onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+            </picture>
             <div class="food__image-fallback">
               <span class="food__fallback-icon">🍽️</span>
               <p>KOTO Văn Miếu</p>

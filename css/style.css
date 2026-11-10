@@ -85,6 +85,17 @@ img {
   display: block;
 }
 
+/* picture bọc ảnh WebP – giữ nguyên kích thước hiển thị của img bên trong */
+.gioi-thieu__image-wrap picture,
+.kien-truc__figure picture,
+.gallery__item picture,
+.checkin__image picture,
+.food__image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Container chung */
 .container {
   width: 100%;
@@ -223,6 +234,10 @@ img {
   text-align: center;
   padding: 100px 20px 60px;
   background: url('../assets/images/hero-chua-mot-cot.jpg') center center / cover no-repeat;
+  background-image: image-set(
+    url('../assets/images/hero-chua-mot-cot.webp') type('image/webp'),
+    url('../assets/images/hero-chua-mot-cot.jpg') type('image/jpeg')
+  );
   background-color: var(--color-brown-dark);
   /* Fallback khi chưa có ảnh */
   overflow: hidden;
@@ -371,6 +386,7 @@ img {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
+  aspect-ratio: 1920 / 1394;
 }
 
 .gioi-thieu__img {
@@ -444,6 +460,7 @@ img {
   background: var(--color-white);
   border: 1px solid rgba(200, 169, 81, 0.15);
   transition: var(--transition);
+  aspect-ratio: 1235 / 768;
 }
 
 .kien-truc__figure:hover {

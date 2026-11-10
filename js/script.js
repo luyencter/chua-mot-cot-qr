@@ -11,10 +11,27 @@ function handleFoodImageError(img, altSrc) {
   } else {
     img.style.display = 'none';
     var fallback = img.nextElementSibling;
+    if (!fallback || !fallback.classList.contains('food__image-fallback')) {
+      var picture = img.parentElement;
+      if (picture && picture.tagName === 'PICTURE') {
+        fallback = picture.nextElementSibling;
+      }
+    }
     if (fallback && fallback.classList.contains('food__image-fallback')) {
       fallback.style.display = 'flex';
     }
   }
+}
+
+function hydrateLazyImage(container) {
+  container.querySelectorAll('source[data-srcset]').forEach(function (source) {
+    source.srcset = source.getAttribute('data-srcset');
+    source.removeAttribute('data-srcset');
+  });
+  container.querySelectorAll('img[data-src]').forEach(function (img) {
+    img.src = img.getAttribute('data-src');
+    img.removeAttribute('data-src');
+  });
 }
 
 // Chờ DOM tải xong trước khi chạy script
@@ -157,21 +174,47 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightboxClose = document.querySelector('.lightbox__close');
   var galleryItems  = document.querySelectorAll('.gallery__item');
 
+  /* Thư viện ảnh: chỉ tải file khi sắp vào viewport, không tải cả 6 ảnh lúc mở trang */
+  if ('IntersectionObserver' in window) {
+    var galleryLazyObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          hydrateLazyImage(entry.target);
+          galleryLazyObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '150px 0px', threshold: 0.01 });
+
+    galleryItems.forEach(function (item) {
+      galleryLazyObserver.observe(item);
+    });
+  } else {
+    galleryItems.forEach(hydrateLazyImage);
+  }
+
   // Mở lightbox khi nhấn vào ảnh
   galleryItems.forEach(function (item) {
     item.addEventListener('click', function () {
+      hydrateLazyImage(item);
       var img = item.querySelector('img');
-      var caption = item.getAttribute('data-caption') || '';
+      var caption = img ? (img.getAttribute('alt') || '') : (item.getAttribute('data-caption') || '');
+      var webpSource = item.querySelector('source[type="image/webp"]');
+      var imageSrc = '';
 
-      if (img) {
-        // Nếu đã có ảnh thực tế
-        lightboxImage.src = img.src;
+      if (webpSource) {
+        imageSrc = webpSource.srcset || webpSource.getAttribute('data-srcset') || '';
+      }
+      if (!imageSrc && img) {
+        imageSrc = img.currentSrc || img.src || img.getAttribute('data-src') || '';
+      }
+
+      if (img && imageSrc && imageSrc.indexOf('data:image/svg+xml') !== 0) {
+        lightboxImage.src = imageSrc;
         lightboxImage.alt = caption;
         lightboxCaption.textContent = caption;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden'; // Khóa cuộn trang
       } else {
-        // Nếu đang là placeholder – hiển thị caption
         lightboxCaption.textContent = caption || 'Ảnh chưa được thêm';
         lightboxImage.src = '';
         lightboxImage.alt = '';
