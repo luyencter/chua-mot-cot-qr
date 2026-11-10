@@ -488,7 +488,7 @@
 
   <!-- ============================================================
        SECTION 7: VIDEO GIỚI THIỆU
-       - Video YouTube giới thiệu Chùa Một Cột
+       - Video MP4 giới thiệu Chùa Một Cột
        ============================================================ -->
   <section class="section video-section" id="video">
     <div class="container">
@@ -503,10 +503,15 @@
       </p>
 
       <div class="video__wrapper animate-on-scroll">
-        <iframe class="video__iframe" src="https://www.youtube.com/embed/11uDh--qg8c"
-          title="Khám phá Chùa Một Cột qua video" loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <video
+          class="video__player"
+          controls
+          preload="none"
+          playsinline
+        >
+          <source src="assets/videos/Video.mp4" type="video/mp4">
+          Trình duyệt của bạn không hỗ trợ phát video MP4.
+        </video>
       </div>
     </div>
   </section>
