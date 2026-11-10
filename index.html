@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá Chùa Một Cột – biểu tượng văn hóa lịch sử ngàn năm của Hà Nội">
+  <title>Chùa Một Cột – Hà Nội</title>
+
+  <!-- Google Fonts: Noto Serif & Noto Sans cho tiếng Việt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS chính -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       THANH ĐIỀU HƯỚNG (Navigation Bar)
+       - Thiết kế mobile-first với nút hamburger
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#trang-chu" class="navbar__logo">
+        <span class="navbar__logo-icon">🏛️</span>
+        <span class="navbar__logo-text">Chùa Một Cột</span>
+      </a>
+
+      <!-- Nút hamburger cho mobile -->
+      <button class="navbar__toggle" id="navToggle" aria-label="Mở menu điều hướng">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <!-- Menu điều hướng -->
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#trang-chu" class="navbar__link active">Trang chủ</a>
+        <a href="#gioi-thieu" class="navbar__link">Giới thiệu</a>
+        <a href="#kien-truc" class="navbar__link">Kiến trúc</a>
+        <a href="#thu-vien-anh" class="navbar__link">Thư viện ảnh</a>
+        <a href="#check-in" class="navbar__link">Check-in</a>
+        <a href="#am-thuc" class="navbar__link">Ẩm thực</a>
+        <a href="#video" class="navbar__link">Video</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SECTION 1: TRANG CHỦ (Hero Section)
+       - Ảnh lớn Chùa Một Cột, tiêu đề, lời giới thiệu
+       ============================================================ -->
+  <section class="hero" id="trang-chu">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title animate-on-scroll">Chùa Một Cột</h1>
+      <p class="hero__subtitle animate-on-scroll">Biểu tượng văn hóa ngàn năm giữa lòng Hà Nội</p>
+      <p class="hero__description animate-on-scroll">
+        Được xây dựng từ thời nhà Lý, Chùa Một Cột là một trong những công trình kiến trúc
+        độc đáo nhất Việt Nam – nơi lưu giữ câu chuyện lịch sử và tâm linh hàng nghìn năm.
+      </p>
+      <a href="#gioi-thieu" class="hero__cta animate-on-scroll">Khám phá ngay</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: GIỚI THIỆU
+       - Lịch sử và câu chuyện hình thành chùa
+       ============================================================ -->
+  <section class="section gioi-thieu" id="gioi-thieu">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">📜</span>
+        Giới thiệu
+      </h2>
+      <div class="section__divider"></div>
+
+      <div class="gioi-thieu__grid">
+        <div class="gioi-thieu__text animate-on-scroll">
+          <h3>Lịch sử hình thành</h3>
+          <p>
+            Chùa Một Cột, tên chữ là <strong>Diên Hựu tự</strong> (延祐寺), nghĩa là "chùa phúc lành dài lâu",
+            được vua Lý Thái Tông cho xây dựng vào năm <strong>1049</strong>. Theo sử sách, nhà vua nằm mộng thấy
+            Phật Bà Quan Âm ngồi trên đài sen, dắt vua lên đài. Khi tỉnh dậy, vua kể lại giấc mơ và được nhà sư
+            Thiền Tuệ khuyên dựng chùa.
+          </p>
+          <p>
+            Chùa được thiết kế có hình dáng một bông sen mọc lên từ mặt hồ, đặt trên một cột đá duy nhất,
+            tượng trưng cho sự thanh khiết và giác ngộ trong Phật giáo. Trải qua gần một nghìn năm lịch sử,
+            chùa đã nhiều lần được trùng tu và tôn tạo.
+          </p>
+
+          <h3>Ý nghĩa văn hóa</h3>
+          <p>
+            Chùa Một Cột không chỉ là một công trình tôn giáo mà còn là <strong>biểu tượng văn hóa</strong>
+            của Thủ đô Hà Nội và cả dân tộc Việt Nam. Năm 2012, Tổ chức Kỷ lục châu Á đã công nhận
+            Chùa Một Cột là ngôi chùa có <strong>kiến trúc độc đáo nhất châu Á</strong>.
+          </p>
+        </div>
+
+        <!-- Ảnh lịch sử Chùa Một Cột -->
+        <div class="gioi-thieu__image-wrap">
+          <img src="assets/images/Anh_lich_su_chua_mot_cot.jpg" alt="Ảnh lịch sử Chùa Một Cột – Hà Nội"
+            class="gioi-thieu__img">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: KIẾN TRÚC
+       - Giới thiệu kiến trúc độc đáo
+       ============================================================ -->
+  <section class="section kien-truc" id="kien-truc">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">🏗️</span>
+        Kiến trúc độc đáo
+      </h2>
+      <div class="section__divider"></div>
+
+      <div class="kien-truc__cards">
+        <!-- Card 1: Cột đá -->
+        <div class="kien-truc__card animate-on-scroll">
+          <div class="kien-truc__card-icon">🪨</div>
+          <h3>Cột đá duy nhất</h3>
+          <p>
+            Toàn bộ ngôi chùa được đặt trên một cột đá duy nhất có đường kính khoảng 1,2 mét,
+            vươn lên từ giữa hồ nước hình vuông. Cột đá tượng trưng cho cuống sen,
+            nâng đỡ đài hoa sen phía trên.
+          </p>
+        </div>
+
+        <!-- Card 2: Đài sen -->
+        <div class="kien-truc__card animate-on-scroll">
+          <div class="kien-truc__card-icon">🪷</div>
+          <h3>Đài sen trên cao</h3>
+          <p>
+            Phần chùa phía trên có hình vuông, mỗi cạnh khoảng 3 mét, mái cong theo kiểu
+            kiến trúc truyền thống Việt Nam. Bên trong đặt tượng Phật Bà Quan Âm được sơn son thếp vàng.
+          </p>
+        </div>
+
+        <!-- Card 3: Hồ nước -->
+        <div class="kien-truc__card animate-on-scroll">
+          <div class="kien-truc__card-icon">💧</div>
+          <h3>Hồ nước Linh Chiểu</h3>
+          <p>
+            Hồ Linh Chiểu hình vuông bao quanh cột đá, với hoa sen nở vào mùa hạ,
+            tạo nên khung cảnh thơ mộng và thanh tịnh. Mặt nước phản chiếu hình ảnh
+            ngôi chùa tạo nên vẻ đẹp huyền ảo.
+          </p>
+        </div>
+
+        <!-- Card 4: Bậc thang -->
+        <div class="kien-truc__card animate-on-scroll">
+          <div class="kien-truc__card-icon">🪜</div>
+          <h3>Bậc thang lên chùa</h3>
+          <p>
+            Lối lên chùa là một cầu thang gạch nhỏ dẫn từ bờ hồ lên đến sàn chùa.
+            Du khách có thể bước lên để chiêm ngưỡng tượng Phật và không gian
+            thiêng liêng bên trong.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ảnh kiến trúc chi tiết -->
+      <div class="kien-truc__diagram animate-on-scroll">
+        <figure class="kien-truc__figure">
+          <img src="assets/images/Anh_kien_truc_chua_mot_cot.jpg" alt="Kiến trúc Chùa Một Cột – Hà Nội" </div>
+      </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: THƯ VIỆN ẢNH
+       - Gallery ảnh với lightbox
+       ============================================================ -->
+  <section class="section thu-vien-anh" id="thu-vien-anh">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">📸</span>
+        Thư viện ảnh
+      </h2>
+      <div class="section__divider"></div>
+
+      <p class="section__desc animate-on-scroll">
+        Hãy cùng chiêm ngưỡng vẻ đẹp của Chùa Một Cột qua từng góc ảnh.
+      </p>
+
+      <!-- Lưới ảnh -->
+      <div class="gallery__grid">
+        <!-- Ảnh 1 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_1.jpg" alt="Chùa Một Cột nhìn từ phía trước" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <!-- Ảnh 2 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_2.JPG" alt="Góc nhìn từ bên hồ Linh Chiểu" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <!-- Ảnh 3 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_3.jpg" alt="Chi tiết mái chùa" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <!-- Ảnh 4 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_4.jpg" alt="Hoa sen trong hồ" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <!-- Ảnh 5 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_5.jpg" alt="Chùa Một Cột vào buổi chiều" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <!-- Ảnh 6 -->
+        <div class="gallery__item animate-on-scroll">
+          <img src="assets/images/Anh_6.jpg" alt="Toàn cảnh khu di tích" class="gallery__img" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">🔍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox (hiển thị ảnh phóng to khi click) -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" aria-label="Đóng">&times;</button>
+      <img class="lightbox__image" id="lightboxImage" src="" alt="">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5: GÓC CHECK-IN
+       - Gợi ý vị trí chụp ảnh đẹp
+       ============================================================ -->
+  <section class="section check-in" id="check-in">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">📍</span>
+        Góc check-in
+      </h2>
+      <div class="section__divider"></div>
+
+      <p class="section__desc animate-on-scroll">
+        Những vị trí chụp ảnh đẹp nhất tại Chùa Một Cột và khu vực xung quanh.
+      </p>
+
+      <div class="checkin__list">
+        <!-- Điểm check-in 1 -->
+        <div class="checkin__item animate-on-scroll">
+          <div class="checkin__image">
+            <img src="assets/images/Duy.jpg" alt="Check-in phía trước hồ Linh Chiểu" class="checkin__img"
+              loading="lazy">
+          </div>
+          <div class="checkin__info">
+            <h3>🌅 Phía trước hồ Linh Chiểu</h3>
+            <p>
+              Đứng phía trước hồ để chụp toàn cảnh chùa phản chiếu trên mặt nước.
+              Thời điểm đẹp nhất là buổi sáng sớm hoặc chiều muộn khi ánh nắng dịu nhẹ.
+            </p>
+            <span class="checkin__tag">🕐 Sáng sớm / Chiều muộn</span>
+          </div>
+        </div>
+
+        <!-- Điểm check-in 2 -->
+        <div class="checkin__item animate-on-scroll">
+          <div class="checkin__image">
+            <img src="assets/images/Hieu.jpg" alt="Check-in góc hoa sen" class="checkin__img" loading="lazy">
+          </div>
+          <div class="checkin__info">
+            <h3>🪷 Góc hoa sen</h3>
+            <p>
+              Vào mùa hè (tháng 6-7), hoa sen nở rộ quanh hồ. Đây là thời điểm lý tưởng
+              để chụp ảnh chùa cùng hoa sen – biểu tượng Phật giáo Việt Nam.
+            </p>
+            <span class="checkin__tag">🕐 Tháng 6 – Tháng 7</span>
+          </div>
+        </div>
+
+        <!-- Điểm check-in 3 -->
+        <div class="checkin__item animate-on-scroll">
+          <div class="checkin__image">
+            <img src="assets/images/Thuy.jpg" alt="Check-in khuôn viên vườn cây" class="checkin__img" loading="lazy">
+          </div>
+          <div class="checkin__info">
+            <h3>🌳 Khuôn viên vườn cây</h3>
+            <p>
+              Khuôn viên xung quanh chùa có nhiều cây xanh tạo bóng mát. Góc chụp từ dưới
+              tán cây nhìn lên chùa sẽ tạo ra những bức ảnh rất nghệ thuật.
+            </p>
+            <span class="checkin__tag">🕐 Cả ngày</span>
+          </div>
+        </div>
+
+        <!-- Điểm check-in 4 -->
+        <div class="checkin__item animate-on-scroll">
+          <div class="checkin__image">
+            <img src="assets/images/Linh.jpg" alt="Check-in bậc thang lên chùa" class="checkin__img" loading="lazy">
+          </div>
+          <div class="checkin__info">
+            <h3>🏛️ Bậc thang lên chùa</h3>
+            <p>
+              Chụp từ chân cầu thang nhìn lên, hoặc từ trên chùa nhìn xuống hồ
+              để có góc ảnh tạo chiều sâu và trang nghiêm.
+            </p>
+            <span class="checkin__tag">🕐 Cả ngày</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6: KHÁM PHÁ ẨM THỰC
+       - Danh sách quán ăn truyền thống gần khu vực Chùa Một Cột
+       ============================================================ -->
+  <section class="section am-thuc" id="am-thuc">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">🍜</span>
+        Khám phá ẩm thực
+      </h2>
+      <div class="section__divider"></div>
+
+      <p class="section__desc animate-on-scroll">
+        Sau chuyến tham quan Chùa Một Cột, hãy dành thời gian khám phá những hương vị đặc trưng của Hà Nội qua các món
+        ăn truyền thống và những địa điểm ẩm thực đáng trải nghiệm.
+      </p>
+
+      <!-- Danh sách 4 quán ăn đặc sắc -->
+      <div class="food__grid">
+        <!-- Quán 1: Phở cuốn Hưng Bền -->
+        <div class="food__card animate-on-scroll">
+          <div class="food__image">
+            <img src="assets/images/Am_thuc_1.jpg" alt="Phở cuốn Hưng Bền" class="food__img" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="food__image-fallback">
+              <span class="food__fallback-icon">🍲</span>
+              <p>Phở cuốn Hưng Bền</p>
+              <small><code>assets/images/Am_thuc_1.jpg</code></small>
+            </div>
+          </div>
+          <div class="food__details">
+            <h3 class="food__name">Phở cuốn Hưng Bền</h3>
+            <p class="food__desc">
+              Thưởng thức món phở cuốn nổi tiếng của khu Ngũ Xã với bánh phở mềm, thịt bò và rau thơm ăn kèm nước chấm.
+            </p>
+            <div class="food__dishes">
+              <span class="food__dish-badge">🍲 Phở cuốn bò</span>
+              <span class="food__dish-badge">🥟 Phở chiên phồng</span>
+            </div>
+            <p class="food__address">
+              <span class="food__address-icon">📍</span> 118 phố Trấn Vũ, Ba Đình, Hà Nội
+            </p>
+            <div class="food__action">
+              <a href="https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+cu%E1%BB%91n+H%C6%B0ng+B%E1%BB%81n+118+Tr%E1%BA%A5n+V%C5%A9+Ba+%C4%90%C3%ACnh+H%C3%A0+N%E1%BB%99i"
+                target="_blank" rel="noopener noreferrer" class="food__map-btn">
+                🗺️ Xem đường đi
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quán 2: Tuyết Bún Chả 34 -->
+        <div class="food__card animate-on-scroll">
+          <div class="food__image">
+            <img src="assets/images/Am_thuc_2.jpg" alt="Tuyết Bún Chả 34" class="food__img" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="food__image-fallback">
+              <span class="food__fallback-icon">🍜</span>
+              <p>Tuyết Bún Chả 34</p>
+              <small><code>assets/images/Am_thuc_2.jpg</code></small>
+            </div>
+          </div>
+          <div class="food__details">
+            <h3 class="food__name">Tuyết Bún Chả 34</h3>
+            <p class="food__desc">
+              Bún chả Hà Nội với thịt nướng thơm, bún tươi, rau sống và nước chấm chua ngọt.
+            </p>
+            <div class="food__dishes">
+              <span class="food__dish-badge">🥩 Bún chả</span>
+              <span class="food__dish-badge">🥢 Nem rán</span>
+            </div>
+            <p class="food__address">
+              <span class="food__address-icon">📍</span> 34 Nguyễn Trung Trực, Ba Đình, Hà Nội
+            </p>
+            <div class="food__action">
+              <a href="https://www.google.com/maps/search/?api=1&query=Tuy%E1%BA%BFt+B%C3%BAn+Ch%E1%BA%A3+34+Nguy%E1%BB%85n+Trung+Tr%E1%BB%B1c+Ba+%C4%90%C3%ACnh+H%C3%A0+N%E1%BB%99i"
+                target="_blank" rel="noopener noreferrer" class="food__map-btn">
+                🗺️ Xem đường đi
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quán 3: Gà tần - Bánh cuốn nóng -->
+        <div class="food__card animate-on-scroll">
+          <div class="food__image">
+            <img src="assets/images/Am_thuc_3.jpg" alt="Gà tần - Bánh cuốn nóng" class="food__img" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="food__image-fallback">
+              <span class="food__fallback-icon">🍲</span>
+              <p>Gà tần - Bánh cuốn nóng</p>
+              <small><code>assets/images/Am_thuc_3.jpg</code></small>
+            </div>
+          </div>
+          <div class="food__details">
+            <h3 class="food__name">Gà tần - Bánh cuốn nóng</h3>
+            <p class="food__desc">
+              Trải nghiệm món bánh cuốn nóng được tráng tại chỗ và món gà tần mang hương vị truyền thống.
+            </p>
+            <div class="food__dishes">
+              <span class="food__dish-badge">🍥 Bánh cuốn nóng</span>
+              <span class="food__dish-badge">🍲 Gà tần</span>
+            </div>
+            <p class="food__address">
+              <span class="food__address-icon">📍</span> 43 Nguyễn Như Đổ, khu Văn Miếu, Hà Nội
+            </p>
+            <div class="food__action">
+              <a href="https://www.google.com/maps/search/?api=1&query=G%C3%A0+t%E1%BA%A7n+B%C3%A1nh+cu%E1%BB%91n+n%C3%B3ng+43+Nguy%E1%BB%85n+Nh%C6%B0+%C4%90%E1%BB%95+V%C4%83n+Mi%E1%BA%BFu+H%C3%A0+N%E1%BB%99i"
+                target="_blank" rel="noopener noreferrer" class="food__map-btn">
+                🗺️ Xem đường đi
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quán 4: KOTO Văn Miếu -->
+        <div class="food__card animate-on-scroll">
+          <div class="food__image">
+            <img src="assets/images/Am_thuc_4.jpg" alt="KOTO Văn Miếu" class="food__img" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="food__image-fallback">
+              <span class="food__fallback-icon">🍽️</span>
+              <p>KOTO Văn Miếu</p>
+              <small><code>assets/images/Am_thuc_4.jpg</code></small>
+            </div>
+          </div>
+          <div class="food__details">
+            <h3 class="food__name">KOTO Văn Miếu</h3>
+            <p class="food__desc">
+              Nhà hàng giới thiệu ẩm thực Việt Nam trong không gian hiện đại, đồng thời kết hợp hoạt động đào tạo nghề
+              nhà hàng – khách sạn cho thanh thiếu niên.
+            </p>
+            <div class="food__dishes">
+              <span class="food__dish-badge">🥢 Nem rán</span>
+              <span class="food__dish-badge">🥩 Bún chả</span>
+              <span class="food__dish-badge">🍲 Món ăn Việt Nam</span>
+            </div>
+            <p class="food__address">
+              <span class="food__address-icon">📍</span> 35 Văn Miếu, Đống Đa, Hà Nội
+            </p>
+            <div class="food__action">
+              <a href="https://www.google.com/maps/search/?api=1&query=KOTO+Restaurant+35+V%C4%83n+Mi%E1%BA%BFu+%C4%90%E1%BB%91ng+%C4%90a+H%C3%A0+N%E1%BB%99i"
+                target="_blank" rel="noopener noreferrer" class="food__map-btn">
+                🗺️ Xem đường đi
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: VIDEO GIỚI THIỆU
+       - Video YouTube giới thiệu Chùa Một Cột
+       ============================================================ -->
+  <section class="section video-section" id="video">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">🎬</span>
+        Khám phá Chùa Một Cột qua video
+      </h2>
+      <div class="section__divider"></div>
+
+      <p class="section__desc animate-on-scroll">
+        Cùng khám phá lịch sử, kiến trúc độc đáo và vẻ đẹp văn hóa của Chùa Một Cột qua những thước phim.
+      </p>
+
+      <div class="video__wrapper animate-on-scroll">
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/11uDh--qg8c"
+          title="Khám phá Chùa Một Cột qua video" loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8: THÔNG TIN THAM QUAN
+       - Thông tin hữu ích cho du khách
+       ============================================================ -->
+  <section class="section thong-tin" id="thong-tin">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll">
+        <span class="section__title-icon">ℹ️</span>
+        Thông tin tham quan
+      </h2>
+      <div class="section__divider"></div>
+
+      <div class="info__grid">
+        <div class="info__card animate-on-scroll">
+          <div class="info__icon">📍</div>
+          <h3>Địa chỉ</h3>
+          <p>Phố Chùa Một Cột, Phường Đội Cấn, Quận Ba Đình, Hà Nội</p>
+        </div>
+
+        <div class="info__card animate-on-scroll">
+          <div class="info__icon">🕐</div>
+          <h3>Giờ tham quan</h3>
+          <p>Hàng ngày: 7:00 – 18:00<br>Miễn phí vé vào cửa</p>
+        </div>
+
+        <div class="info__card animate-on-scroll">
+          <div class="info__icon">🚌</div>
+          <h3>Di chuyển</h3>
+          <p>Xe buýt: Tuyến 09, 18, 22, 45<br>Gần Lăng Chủ tịch Hồ Chí Minh</p>
+        </div>
+
+        <div class="info__card animate-on-scroll">
+          <div class="info__icon">👗</div>
+          <h3>Lưu ý</h3>
+          <p>Ăn mặc lịch sự, kín đáo khi vào khu vực chùa. Không gây ồn ào.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER: CHÂN TRANG
+       - Thông tin dự án
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <h3>🏛️ Chùa Một Cột – Hà Nội</h3>
+          <p>Website giới thiệu du lịch văn hóa</p>
+        </div>
+
+        <div class="footer__project">
+          <h4>Thông tin dự án</h4>
+          <p>📚 Bài tập nhóm – Năm học 2026</p>
+
+          <p>🏫 Trường: Khoa học xã hội và nhân văn</p>
+          <p>📧 Liên hệ: Mai văn Mạnh Lớp QLTT B đang muốn tìm ny FB:https://www.facebook.com/van.manh.443867</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Liên kết nhanh</h4>
+          <a href="#trang-chu">Trang chủ</a>
+          <a href="#gioi-thieu">Giới thiệu</a>
+          <a href="#kien-truc">Kiến trúc</a>
+          <a href="#thu-vien-anh">Thư viện ảnh</a>
+          <a href="#am-thuc">Ẩm thực</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 – Dự án giới thiệu Chùa Một Cột. Bài tập nhóm.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nút cuộn lên đầu trang -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Lên đầu trang">⬆</button>
+
+  <!-- JavaScript chính -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
